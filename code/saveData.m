@@ -1,5 +1,5 @@
 function saveData(folder,features,I,info,hits,origImage,angle,xFactor,yFactor,learning_time)
-saveTimeAndClicks(0,learning_time,folder,0)
+saveTimeAndClicks(0,learning_time,folder,0,0)
 save([folder '\I_forCheck'],'I');
 save([folder '\origImage_forCheck'],'origImage');
 save([folder '\info_forCheck'],'info');

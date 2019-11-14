@@ -31,6 +31,7 @@ for i = 1:nf
             curr_corr(max(loc_x(1)-2*ps,1):min(loc_x(1)+2*ps,size(I,1)),max(loc_y(1)-2*ps,1):min(loc_y(1)+2*ps,size(I,2))) = 0;
             max_corr_2 = max(curr_corr(:));
             if(max_corr_2*2 < max_corr)
+%             if(max_corr_2*1.5 < max_corr)
                 corrMapScore{i}(j) = max_corr;
                 corrMapScore{j}(i) = max_corr;
             else

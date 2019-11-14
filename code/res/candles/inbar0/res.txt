@@ -1,0 +1,7 @@
+counter: 0.000000 click_num: 0.000000 time: 21.295722
+counter: 74.000000 click_num: 6.000000 time: 48.035519
+counter: 70.000000 click_num: 11.000000 time: 73.135202
+counter: 67.000000 click_num: 13.000000 time: 92.475628
+counter: 71.000000 click_num: 18.000000 time: 113.490117
+counter: 71.000000 click_num: 20.000000 time: 131.159069
+counter: 71.000000 click_num: 20.000000 time: 132.821579

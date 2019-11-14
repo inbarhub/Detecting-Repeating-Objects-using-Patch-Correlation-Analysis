@@ -27,7 +27,9 @@ gamma_2 = sqrt(latent(2));
 %     rot = 1;
 % end
 angle = atan2(COEFF(1,1),COEFF(2,1))*180/pi;
-if(angle < 0)
+
+% if abs(angle) < 45 and 
+if abs(angle) < 45
     rad_y = gamma_1;
     rad_x = gamma_2;
 else
@@ -41,8 +43,13 @@ yFactor = optY/rad_y;
 if(gamma_1/gamma_2 < 2)
     xFactor = 1;
     yFactor = 1;
+    if gamma_1 > 8 || gamma_2 > 8
+        xFactor = 7/rad_x; %10
+        yFactor = 7/rad_y;
+    end
 end
 angle = 0;
 I = imresize(I,round(sz(1:2).*[xFactor,yFactor]));
-close all
+I = imresize(I,round(sz(1:2).*[0.7,0.7]));
+
 end

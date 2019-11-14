@@ -20,7 +20,7 @@ toStop = 0;
 for i = 1:80
     flag = 0;
     %%%%%%%%%%%%%%%%%should be parfor
-    for j=1:r 
+    for j=1:1 
         x{j} = ps + randi(w-2*ps) ;
         y{j} = ps + randi(h-2*ps) ;
         P{j} = I((x{j}-ps):(x{j}+ps),(y{j}-ps):(y{j}+ps)) ;

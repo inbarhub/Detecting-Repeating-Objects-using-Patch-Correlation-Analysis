@@ -1,4 +1,4 @@
-function applyParameters(str_for_save)
+function applyParameters(str_for_save,str_to_save)
 close all
 params = loadMatLP(str_for_save);
 fact = 4;
@@ -40,6 +40,7 @@ startButton = uicontrol('Style','pushbutton','String','Start', 'pos',[0 60 50 25
 set(startButton,'ForegroundColor',[0 0 0]);
 set(startButton,'FontWeight','bold');
 set(startButton,'Callback',@startPushButton_CB);
+
 tic
     function constChanged_CB(hObject,eventdata)
         newConst = get(valueConstEdit,'Value');
@@ -62,8 +63,8 @@ tic
             end
             [indicesPos,indicesNeg] = getIndices(tmp,numOfCellsPos,numOfCellsNeg);
             if(size(indicesPos{1},2) < parts(1) && size(indicesNeg{1},2) < parts(1) || step_number == 5)
-                showFinalImage(a_1,params,str_for_save,step_number);
-                saveTimeAndClicks(click_count,toc,str_for_save,counter)
+                showFinalImage(a_1,params,str_to_save,step_number);
+                saveTimeAndClicks(click_count,toc,str_to_save,counter,0)
                 break;
             elseif(size(indicesPos{1},2) < parts(1))
                 numOfCellsPos = numOfCellsPos/2;
@@ -154,8 +155,13 @@ tic
             params.I = params.I-min(params.I(:));
             params.I = params.I/max(params.I(:));
             figure(5); 
-            imshow(showFinalImage(a_1,params,str_for_save,step_number));
-            saveTimeAndClicks(click_count,toc,str_for_save,counter);
+            imshow(showFinalImage(a_1,params,str_to_save,step_number));
+            points_to_save = zeros(size(loc,2),2);
+            for k = 1:size(loc,2)
+                points_to_save(k,:) = [params.info(loc(k)).center(1),params.info(loc(k)).center(2)];
+            end
+            saveTimeAndClicks(click_count,toc,str_to_save,counter,points_to_save);
+            
             pause(1.5)
         end
     end

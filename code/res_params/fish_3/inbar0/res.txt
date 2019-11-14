@@ -1,0 +1,13 @@
+counter: 0.000000 click_num: 0.000000 time: 65.482351
+counter: 90.000000 click_num: 9.000000 time: 74.288577
+counter: 106.000000 click_num: 12.000000 time: 97.606412
+counter: 118.000000 click_num: 19.000000 time: 126.158141
+counter: 149.000000 click_num: 22.000000 time: 153.217665
+counter: 165.000000 click_num: 29.000000 time: 178.043698
+counter: 165.000000 click_num: 29.000000 time: 179.836232
+counter: 244.000000 click_num: 11.000000 time: 26.458774
+counter: 204.000000 click_num: 19.000000 time: 72.932925
+counter: 230.000000 click_num: 28.000000 time: 99.930189
+counter: 264.000000 click_num: 39.000000 time: 145.966328
+counter: 273.000000 click_num: 43.000000 time: 173.886497
+counter: 273.000000 click_num: 43.000000 time: 175.922519
