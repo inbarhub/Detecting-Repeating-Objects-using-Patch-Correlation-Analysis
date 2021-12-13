@@ -9,14 +9,14 @@ In this paper we describe a new method for detecting and counting a repeating ob
 
 ##### The main script
 
-The main file is CountCells.m and it requires:
+The main file is countCells.m and it requires:
 - **Image_name**. The name of the input image without any postfix (i.e., no `.png`,`.jpg`). It should be appeared in `images` directory. You can add your own image to this directory and run the code with its name. The code will load `[images/Image_name]` with several options for postfix.
 - **Participant_name**. The results are saved in a dedicated results folder: `[res/Image_name_Participant_nameSequential_number]`. In case there are several runs for one participant or you have more than one paritcpant with the same name, the folder name contains a sequential number.
 
 Examples for running the code: 
-     - CountCells('Cells1', 'Inbar')
-     - CountCells('cars', 'Inbar')
-     - CountCells('beers', 'Jonathan')
+     - countCells('Cells1', 'Inbar')
+     - countCells('cars', 'Inbar')
+     - countCells('beers', 'Jonathan')
 
 ##### User Interaction
 
