@@ -23,7 +23,7 @@ Examples for running the code:
 The algorithm can be divided into two parts as follows (the user interaction is marked in *Italic*): 
 
 - Finding the DMP parameters automatically and extracing the features of the potintial locations (more information about the features can be found in the paper).
-   - You are presented with the input image and *you need to mark a circle around the repeating object as accurate as possible*. This step is important for rescaling the image. Then, the algorithm automatically fits the DPM parameters and save the features in the result folder.
+   - You are presented with the input image and *you need to mark a circle around the repeating object as accurate as possible*. This step is important for rescaling the image. Then, the algorithm automatically fits the DPM parameters and saves the features in the result folder.
 
 - Interative session where the user fine-tune the classifier of the potential locations by correcting the marginal classifications that are shown.
    - You will then be presented with the input image, 20 potiential locations with their classifications and a slider. *You should play with the slider to find the best classifications of the presented locations.*
