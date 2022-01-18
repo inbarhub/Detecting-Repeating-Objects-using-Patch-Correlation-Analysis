@@ -1,6 +1,6 @@
 # Detecting Repeating Objects using Patch Correlation Analysis
 
-This is the CPU implementation code of the paper: **Detecting Repeating Objects using Patch Correlation Analysis** presented in CVPR 2016.
+This is the CPU implementation code of the paper: **[Detecting Repeating Objects using Patch Correlation Analysis](https://www.cs.huji.ac.il/w~raananf/projects/count/paper.pdf)** presented in CVPR 2016.
 
 ### Abstract
 In this paper we describe a new method for detecting and counting a repeating object in an image. While the method relies on a fairly sophisticated deformable part model, unlike existing techniques it estimates the model parameters in an unsupervised fashion thus alleviating the need for a user-annotated training data and avoiding the associated specificity. This automatic fitting process is carried out by exploiting the recurrence of small image patches associated with the repeating object and analyzing their spatial correlation. The analysis allows us to reject outlier patches, recover the visual and shape parameters of the part model, and detect the object instances efficiently. In order to achieve a practical system which is able to cope with diverse images, we describe a simple and intuitive active-learning procedure that updates the object classification by querying the user on very few carefully chosen marginal classifications. Evaluation of the new method against the state-of-the-art techniques demonstrates its ability to achieve higher accuracy through a better user experience.
